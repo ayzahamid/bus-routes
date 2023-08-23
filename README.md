@@ -13,12 +13,23 @@ rvm to install Ruby
 ## Install dependencies
 ```
 rvm install 3.1.2
+gem install rspec
 ```
 
 ## Run Project
 To run the project please use the following command.
 ```
 ruby src/main.rb
+```
+
+## Running tests
+To run the tests please use the following commands.
+```
+rspec spec/
+```
+
+```
+ruby -I tests -r test/unit -e "Dir.glob('./tests/test_*.rb') { |f| require f }"
 ```
 
 ## Brief Design Explanation
